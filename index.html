@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Tip.ly Tip Calculator</title>
+  </head>
+  <body>
+    <script src="tip.js"></script>
+      <div class="banner"> 
+        <div class="title">
+          <h1>Tip.ly</h1> 
+        </div>
+        <div class="logo"><h2>T</h2></div>
+       </div>
+        <div class="tip-container">
+          <div id="tip">
+              <div class="bill-total">
+                Bill Total 
+              </div>
+              <div class="billInput"><input
+                type="text"
+                id="total-bill"
+                name="bill"
+              /><br /><br /></div>
+              <div class="visit">How was your visit?</div><div class="dropDown">
+                <select name="visitExp" id="visitExp">
+                  <option value="Great">Great</option>
+                  <option value="Good">Good</option>
+                  <option value="Ok">Ok</option>
+                </select>
+              </div>
+              <button class="calculate-total" onclick="tipping()">Calculate</button>
+              <script src="tip.js"></script> 
+              <div class="total-tip">
+                <div>Bill Total - <output
+                  type="text"
+                  id="billtotal-total"
+                  name="total"
+                ></div>
+                <div>Tip - <output
+                  type="text"
+                  id="tip-only"
+                  name="total"
+                ></div>
+                <div>Bill Total + Tip - <output
+                  type="text"
+                  id="tipandtotal"
+                  name="total"
+                ></div>
+              </div>
+          </div>
+        </div>
+  </body>
+</html>

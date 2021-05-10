@@ -1,0 +1,117 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: Helvetica, sans-serif;
+}
+
+.tip-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-image: url(/img/coffee2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "logo . . . . title . . . .";
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 1);
+  background: -webkit-radial-gradient(
+    top left,
+    rgba(255, 255, 255, 0.5),
+    rgba(121, 163, 171, 0.2)
+  );
+  background: -moz-radial-gradient(
+    top left,
+    rgba(255, 255, 255, 0.5),
+    rgba(121, 163, 171, 0.2)
+  );
+  background: radial-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.5),
+    rgba(121, 163, 171, 0.2)
+  );
+}
+.title {
+  font-family: "Pacifico", cursive;
+  color: #333333;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+}
+.logo {
+  font-family: "Pacifico", cursive;
+  position: absolute;
+  top: -88px;
+  left: 50px;
+  font-size: 50px;
+  color: #333333;
+}
+#tip {
+  padding: 5rem;
+  display: grid;
+  grid-template-areas:
+    "bill-total billInput"
+    "visit visitExp"
+    "calculate-total calculate-total"
+    "total-tip";
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 1);
+  background: -webkit-radial-gradient(
+    top left,
+    rgba(255, 255, 255, 0.5),
+    rgba(121, 163, 171, 0.2)
+  );
+  background: -moz-radial-gradient(
+    top left,
+    rgba(255, 255, 255, 0.5),
+    rgba(121, 163, 171, 0.2)
+  );
+  background: radial-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.5),
+    rgba(121, 163, 171, 0.2)
+  );
+  border-radius: 4rem;
+}
+
+.bill-total {
+  margin-right: 10px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.visit {
+  color: #333333;
+  font-weight: bold;
+}
+
+.total-tip {
+  color: #333333;
+  font-weight: bold;
+  margin-top: 30px;
+}
+output {
+  font-weight: normal;
+  color: black;
+  text-decoration: underline;
+}
+#visitExp {
+  margin-left: 10px;
+}
